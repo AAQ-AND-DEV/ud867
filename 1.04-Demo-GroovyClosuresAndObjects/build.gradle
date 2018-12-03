@@ -20,6 +20,12 @@ def bar = myClosure
 def baz = bar
 baz()
 
+def zip bop
+def f1 {}
+f1.description = atuff
+f1.
+
+def f2 = {item -> }
 /*
 
 Closures have a different notation for arguments.
@@ -58,6 +64,14 @@ declare a list using a literal.
 */
 
 def myList = ["Gradle", "Groovy", "Android"]
+
+def myList2 = ["zip" , "to", "zap"]
+// need to know how to declare params
+
+def fShift() ={
+
+}
+def survey = {println it -> }
 
 /*
 
