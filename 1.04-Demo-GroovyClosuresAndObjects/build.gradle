@@ -25,7 +25,7 @@ def f1 {}
 f1.description = atuff
 f1.
 
-def f2(output) = {item -> output+item+ ' '
+def f2(output) = {item -> output+item+ ', '
 output}
 /*
 
