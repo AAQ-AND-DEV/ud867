@@ -67,11 +67,16 @@ def myList = ["Gradle", "Groovy", "Android"]
 
 def myList2 = ["zip" , "to", "zap"]
 // need to know how to declare params
+//and practice grovvy.each
 
-def fShift() ={
+def fShift() ={ it -> 
+def temp = it
+temp[0] = it[it.length]
+
+it[0]
 
 }
-def survey = {println it -> }
+def survey = {println (fShift(myList2)it -> }
 
 /*
 
