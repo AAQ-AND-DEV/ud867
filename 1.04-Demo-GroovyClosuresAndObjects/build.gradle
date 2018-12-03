@@ -25,8 +25,10 @@ def f1 {}
 f1.description = atuff
 f1.
 
-def f2 = {item -> }
+def f2(output) = {item -> output+item+ ' '
+output}
 /*
+
 
 Closures have a different notation for arguments.
 
@@ -68,6 +70,8 @@ def myList = ["Gradle", "Groovy", "Android"]
 def myList2 = ["zip" , "to", "zap"]
 // need to know how to declare params
 //and practice grovvy.each
+//i ghink this will run
+println f2(myList2)
 
 def fShift() ={ it -> 
 def temp = it
