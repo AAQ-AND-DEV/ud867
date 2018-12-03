@@ -34,6 +34,24 @@ Closures have a different notation for arguments.
 
 */
 
+class DemoB { String name
+def pullT {name.append " great to meet you $name"}
+}
+
+myBClass = new DemoB
+
+def testAccessClass = {
+println "who !re you?"
+//find groovy console cmds
+name = input
+pullT
+println name
+}
+
+testAccessClass.delegate = myBClass
+//i think this will fail Test!
+testAccessClass
+
 def doubleIt = { x -> x + x}
 
 /*
