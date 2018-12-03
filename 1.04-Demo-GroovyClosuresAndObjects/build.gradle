@@ -73,6 +73,9 @@ def myList2 = ["zip" , "to", "zap"]
 //i ghink this will run
 println f2(myList2)
 
+myList2.each(f2) 
+//think these are identical under hood?
+
 def fShift() ={ it -> 
 def temp = it
 temp[0] = it[it.length]
